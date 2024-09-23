@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black !important; */
+}
+
+html, body {
+    height: 100%;
+  }
+  
+
+html {
+    font-family: 'Sarabun', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f7f9f9;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 1rem 1rem;
+    overflow-x: hidden;
+}
+
+header {
+    margin: 1rem;
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    
+}
+
+main {
+    height: 100vh;
+}
+
+.titles {
+    padding: 3rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.character-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+}
+
+.consonants {
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+    border: 1px solid #b2babb;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.vowels {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    border: 1px solid #b2babb;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+/* For the sub-containers (inside consonants and vowels) */
+.low-class,
+.middle-class,
+.high-class,
+.short-vowels,
+.long-vowels  {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 6rem;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* The styles for the "flashcards" in each section. */
+.lc-card,
+.mc-card,
+.hc-card,
+.sh-vwl-card,
+.l-vwl-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid #b2babb;
+    border-radius: 5px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 1px;
+}
+
+.hc-card {
+    width: 85px;
+    height: 130px;
+}
+
+/* BELOW are the characters that need custom placement. */
+/* #t-taan {
+    padding-bottom: 12px;
+}
+
+#sara-i {
+    position:absolute;
+    left: 45px;
+} */
+/* ABOVE are the characters that need custom placement. */
+
+/* Individual hover effects (main difference being color and angle) for the flashcards */
+.lc-card:hover {
+    /* background-color: #b2babb; */
+    transform: translateY(-5px); /* Moves the card upward by 5px */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Makes the shadow stronger to give depth */
+    background: linear-gradient(120deg, #8bcbfc, #6760fa);
+}
+
+.mc-card:hover {
+    /* background-color: #b2babb; */
+    transform: translateY(-5px); /* Moves the card upward by 5px */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Makes the shadow stronger to give depth */
+    background: linear-gradient(120deg, #fbefa4, #ff9645);
+}
+
+.hc-card:hover {
+    /* background-color: #b2babb; */
+    transform: translateY(-5px); /* Moves the card upward by 5px */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Makes the shadow stronger to give depth */
+    background: linear-gradient(120deg, #adadad, #f91a0a);
+}
+
+.sh-vwl-card:hover {
+    /* background-color: #b2babb; */
+    transform: translateY(-5px); /* Moves the card upward by 5px */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Makes the shadow stronger to give depth */
+    background: linear-gradient(30deg, #48f8c3, #fbf7c9);
+}
+
+/* Makes the text color lighter upon hover */
+.lc-card:hover .eng-txt,
+.mc-card:hover .eng-txt,
+.hc-card:hover .eng-txt {
+    color: #f7f9f9;
+}
+
+.thai-char {
+    text-align: center;
+}
+
+.eng-txt {
+    color: #616a6b;
+    font-size: 1rem;
+
+
+}
