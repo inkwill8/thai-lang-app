@@ -11,4 +11,6 @@ Some features I'd like to add in the future:
     - Add an 'info' section with additional information about the Thai language
     - Create a seperate page dedicated strictly to Thai vocabulary useful for beginners
 
+You can see the project [here](https://thai-lang-app.netlify.app/).
+
 If you speak Thai (even if you don't) and would like to contribute, [email me!](mailto:sebastien.lacasse101@gmail.com?subject=Contribute)
